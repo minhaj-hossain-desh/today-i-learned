@@ -47,10 +47,16 @@ This is **Version 2** of **Today I Learned**, a fully responsive web app built u
 - **Deployment**: Runs on **Node.js**, can be deployed to **Vercel/Netlify**
 
 ---
-
-## 📂 Folder Structure
-v2/ │── src/ │ │── components/ # Reusable React components │ │── App.js # Main application logic │ │── index.js # Entry point │ │── supabase.js # Supabase configuration │ │── style.css # Global styles │ │── logo.png # App logo │ │── README.md # Documentation for this version │── public/ │ │── index.html # Main HTML template │── package.json # Dependencies and scripts
+### 🔹 **Folder Breakdown**
+- **`src/` (Source Code)** → Contains all the React components, styles, and logic.
+- **`public/` (Static Files)** → Includes `index.html`, favicon, and other assets.
+- **`build/` (Production Build)** → Optimized final files for **deployment**.
 
 ---
+
+## 🌍 **Live Demo**
+🚀 **Try the deployed web app here:**  
+🔗 **[Today I Learned - Live Demo](https://today-i-learned-minhaj.netlify.app/)**  
+
 
 
