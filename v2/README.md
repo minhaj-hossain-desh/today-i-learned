@@ -44,7 +44,7 @@ This is **Version 2** of **Today I Learned**, a fully responsive web app built u
 - **State Management**: `useState` and `useEffect`
 - **Backend**: Supabase (PostgreSQL)
 - **Styling**: CSS Flexbox & Grid
-- **Deployment**: Runs on **Node.js**, can be deployed to **Vercel/Netlify**
+- **Deployment**: Runs on **Node.js**, and is deployed to **Netlify**
 
 ---
 ### 🔹 **Folder Breakdown**
