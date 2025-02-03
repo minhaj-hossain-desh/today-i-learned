@@ -1,0 +1,295 @@
+/* 🌟 Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌟 Body & Layout */
+body {
+  background-color: #292524;
+  color: #fafaf9;
+  font-family: "Sono", sans-serif;
+  padding: 16px 32px;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🔹 Header */
+.header {
+  margin-bottom: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  width: 68px;
+  height: 68px;
+}
+
+/* 🔹 Main Layout */
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+  height: 60vh;
+}
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+section {
+  overflow: scroll;
+  padding-bottom: 40px;
+}
+
+/* 🔹 Fact Items */
+.fact {
+  font-size: 20px;
+  line-height: 1.4;
+  background-color: #57534e;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  letter-spacing: -1px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+}
+
+/* 🔹 Headings */
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: "Coiny", sans-serif;
+  color: #fafaf9;
+  line-height: 1;
+  margin-top: 6px;
+}
+
+/* 🔹 Tags */
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny", sans-serif;
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+/* 🔹 Voting Buttons */
+.vote_buttons {
+  margin-left: auto;
+  flex-shrink: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.vote_buttons button {
+  background-color: #78716c;
+  border: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 100px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.vote_buttons button:hover {
+  background-color: #292524;
+}
+
+/* 🔹 Lists */
+ul {
+  list-style: none;
+}
+
+.category {
+  margin-bottom: 16px;
+}
+
+/* 🔹 Source Links */
+.source:link,
+.source:visited {
+  color: #a8a29e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.source:hover,
+.source:active {
+  color: #3b82f6;
+}
+
+/* 🔹 Buttons */
+.btn {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  color: inherit;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+
+.btn_large {
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+
+.btn_large_categories {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn_category {
+  width: 100%;
+  background-image: none;
+}
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 900px) {
+  .btn_large_categories {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .btn_large {
+    margin-top: 16px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* 🔹 Fact Form */
+.fact_form {
+  background-color: #57534e;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
+}
+
+.fact_form input,
+.fact_form select {
+  background-color: #78716c;
+  max-width: 220px;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 18px;
+  color: inherit;
+  font-family: inherit;
+}
+
+.fact_form input::placeholder {
+  color: #a8a29e;
+}
+
+.fact_form input:first-child {
+  flex-grow: 1;
+  max-width: none;
+}
+
+.fact_form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
+}
+
+/* 🔹 Additional Responsive Styles */
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vote_buttons {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+  .fact_form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .fact_form input,
+  .fact_form select {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .fact_form input,
+  .fact_form select {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .fact_form {
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* 🔹 Hidden Elements */
+.hidden {
+  display: none !important;
+}
